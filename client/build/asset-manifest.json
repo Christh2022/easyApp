@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Christh2022/easyApp.git/static/css/main.982808ad.css",
-    "main.js": "/Christh2022/easyApp.git/static/js/main.134afe27.js",
+    "main.js": "/Christh2022/easyApp.git/static/js/main.b071ee25.js",
     "static/media/boy.png": "/Christh2022/easyApp.git/static/media/boy.69ba46380620d355cace.png",
     "static/media/glassesimoji.png": "/Christh2022/easyApp.git/static/media/glassesimoji.a08bdab12e8eb56a6874.png",
     "static/media/Gumela Regular.otf": "/Christh2022/easyApp.git/static/media/Gumela Regular.0ae83c6988a536716eb4.otf",
@@ -17,10 +17,10 @@
     "static/media/user.svg": "/Christh2022/easyApp.git/static/media/user.97eb91c07eec18b2a81bbf29612648e8.svg",
     "static/media/send.svg": "/Christh2022/easyApp.git/static/media/send.dbced668c2a09d94029f856ecb325c14.svg",
     "main.982808ad.css.map": "/Christh2022/easyApp.git/static/css/main.982808ad.css.map",
-    "main.134afe27.js.map": "/Christh2022/easyApp.git/static/js/main.134afe27.js.map"
+    "main.b071ee25.js.map": "/Christh2022/easyApp.git/static/js/main.b071ee25.js.map"
   },
   "entrypoints": [
     "static/css/main.982808ad.css",
-    "static/js/main.134afe27.js"
+    "static/js/main.b071ee25.js"
   ]
 }

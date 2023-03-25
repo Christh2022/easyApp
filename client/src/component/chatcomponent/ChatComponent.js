@@ -77,7 +77,7 @@ const ChatComponent = () => {
 
     loader(messageDiv);
 
-    const response = await fetch('http://localhost:5080', {
+    const response = await fetch('https://etude-facile.onrender.com', {
       method: "POST",
       headers: {
         "Content-Type" : "application/json", 

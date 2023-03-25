@@ -1,0 +1,117 @@
+.service{
+    position: relative;
+    top: 13rem;
+}
+
+.service .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    transform: scale(0.8);
+}
+
+.service .title h1{
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.service .title span{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--orange);
+}
+
+.service .s-payementCard{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    transform: scale(0.9);
+}
+
+
+.service .s-payementCard .pay-content{
+    width: calc(40% - 10px);
+}
+
+@media (min-width: 1400px){
+    .service .title{
+        transform: scale(1.3);
+        margin-bottom: 100px;
+    }
+    .service .s-payementCard{
+        transform: scale(0.85);
+        justify-content: center;
+        gap: 3rem;
+        width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .service .title{
+        transform: scale(0.7);
+    }
+
+}
+
+@media (max-width: 724px){
+    .service .title{
+        transform: scale(0.65);
+        margin-bottom: 0px;
+    }
+
+    .service .title h1{
+        font-size: 2rem;
+    }
+
+    .service .s-payementCard{
+        top: -12rem;
+        transform: scale(0.65);
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .service .s-payementCard .pay-content{
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px){
+    .service{
+        position: relative;
+        top: 20rem;
+    }
+    
+    .service .s-payementCard{
+        transform: scale(0.6);
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        top: -15rem
+    }  
+    
+    .service .title{
+        transform: scale(0.85);
+        margin-bottom: 0;
+    }
+
+    .title h1{
+        font-size: 1.75rem;
+        margin-bottom: 4px;
+    }
+    
+    .title span{
+        font-size: 1.05rem;
+    }
+
+    .service .s-payementCard .pay-content{
+        width: 100%;
+    }
+   
+}

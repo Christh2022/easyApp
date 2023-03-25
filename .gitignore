@@ -1,0 +1,10 @@
+client/node_modules
+client/src/.env
+client/src/img
+client/src/font
+client/src/pages/ProtectedRouter.js
+client/src/pages/ProtectRouter.js
+
+server1/node_modules
+server1/.env
+

@@ -1,0 +1,107 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: -0.5rem -3.5rem;
+    position: relative;
+    margin-top: -7rem;
+}
+
+.footer .f-content{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    gap: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer .f-content::after{
+    content: "";
+    position: absolute;
+    background: white;
+    width: 60rem;
+    height: 2px;
+    bottom: 4.3rem;
+}
+
+
+.footer .f-support, .f-apropos, .f-social{
+    width: calc(28% - 10px);
+    margin-top: 15rem;
+}
+
+.footer .f-support h3,
+.footer .f-apropos h3,
+.footer .f-social h3{
+    position: relative;
+    top: -3rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer .f-support ul ,
+.footer .f-apropos ul,
+.footer .f-social ul {
+    position: relative;
+    display: grid;
+    place-items: center;
+    top: -4.5rem;
+    margin: 30px 0;
+    gap: 0.5rem;
+}
+
+.footer .f-support ul li,
+.footer .f-apropos ul li,
+.footer .f-social ul li{
+    font-size: 1rem;
+    list-style: none;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+
+
+.f-support ul li:hover,
+.f-apropos ul li:hover,
+.f-social ul li:hover{
+    text-decoration: underline;
+}
+
+.copyright{
+    position: absolute;
+    bottom: 2rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    width: 78%;
+    padding-bottom: 1.5rem
+}
+
+@media (max-width: 720px){
+    .footer .f-apropos, .copyright{
+        display: none;
+    }
+
+    .footer .f-support, .f-social{
+        width: 100%;
+        transform: scale(0.8);
+        margin-bottom: 0rem;
+    }
+
+    .footer .f-content{
+        bottom: -5rem;
+    }
+
+    .f-content::after{
+        display: none;
+    }
+
+    
+
+}

@@ -1,0 +1,161 @@
+.contact-form{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: 20rem;
+    margin-bottom: 20rem;
+    transition: all 0.5s ease;
+}
+
+.contact-form .w-left{
+    padding-left: 3rem;
+    width: calc(45% - 10px);
+    transition: all 0.5s ease;
+}
+
+.contact-form .w-left .awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.contact-form .w-left .awesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.contact-form .w-left .awesome>:nth-child(2){
+    color: var(--orange);
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.contact-form .c-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: calc(55% - 10px);
+    transition: all 0.5s ease;
+}
+
+.contact-form .c-right form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    align-items: center;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+
+.contact-form .c-right .user{
+    width: 20rem;
+    height: 2rem;
+    padding: 0.3rem;
+    outline: none;
+    border: 2px solid var(--orange);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contact-form .c-right  textarea{
+    height: 4rem !important;
+}
+
+
+
+@media (max-width: 960px) {
+    .contact-form{
+        margin-bottom: 25rem;
+    }
+
+    .contact-form .w-left .awesome>:nth-child(1), 
+    .contact-form .w-left .awesome>:nth-child(2){
+        font-size: 1.3rem;
+    }
+
+    .contact-form .c-right form {
+        gap: 0.5rem;
+    }
+
+    .contact-form .c-right form .user{
+        transform: scale(0.8);
+    }
+}
+
+
+@media  (max-width: 724px) {
+    .contact-form{
+        flex-direction: column;
+        top: -6.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+ 
+    .contact-form .w-left{
+        transform: scale(0.9);
+        padding-left: 0rem;
+        padding-bottom: 0.5rem;
+    }
+ 
+    .contact-form .awesome{
+        justify-content: center;
+        width: 100%;
+     }
+ 
+    .contact-form .awesome>:nth-child(1),
+    .contact-form .awesome>:nth-child(2){
+        font-size: 1.7rem;
+    }
+ 
+    .contact-form .c-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:  0 ;
+    }
+
+    .contact-form .c-right form{
+        justify-content: center;
+        align-items: center;
+    }
+  
+ }
+
+
+@media  (max-width: 420px) {
+   .contact-form{
+        flex-direction: column;
+        top: -7rem;
+        margin-bottom: 0rem;
+    }
+
+
+    .contact-form .w-left{
+        width: 100%;
+    }
+ 
+    .contact-form .awesome{
+        justify-content: center;
+        width: 100%;
+        display: grid;
+        place-items: center;
+     }
+ 
+    .contact-form .awesome>:nth-child(1),
+    .contact-form .awesome>:nth-child(2){
+        font-size: 1rem;
+    }
+
+    
+ 
+}
+

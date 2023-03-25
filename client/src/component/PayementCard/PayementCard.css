@@ -1,0 +1,100 @@
+.payement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+}
+
+.payement:hover{
+    transform: scale(1.05);
+}
+
+.payement .phead{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #fdc50f 26.71%, #fb982f 99.36%);
+    padding: 10px 0 50px 0;
+    color: white;
+    border-radius: 3rem;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.payement .phead h2{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0.6rem;
+    border-bottom: 1px solid white;
+    width: 95%;
+}
+
+.payement .pbody{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payement .pbody h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--gray);
+    text-align: center;
+    padding: 5px 0;
+}
+
+.payement .pbody p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gray);
+    border-bottom: 1px solid var(--orange);
+    width: 100%;
+    position: relative;
+    padding: 2px 0 20px 0;
+}
+
+.payement .pbody p::before{
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--orange);
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -20%;
+}
+
+.payement .pbody ul{
+    width: 100%;
+}
+
+
+.payement .pbody ul .i-list li{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--gray);
+    list-style: none;
+    padding: 0.5rem 0;
+    width: 100%;
+    border-bottom: 1px solid var(--orange);
+}
+
+.payement .s-button{
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+

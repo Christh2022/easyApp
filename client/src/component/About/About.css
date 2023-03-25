@@ -1,0 +1,270 @@
+.about{
+    display:  flex;
+    height: 80vh;
+    margin-bottom: 2.5rem;
+    transform: scale(0.9);
+    width: 100%;
+    position: relative;
+    top: 2rem;
+}
+
+.about .awesome{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: calc(35% - 10px);
+}
+
+.about .awesome>:nth-child(1){
+    color: var(--black);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about .awesome>:nth-child(2){
+    color: var(--orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.about .awesome>:nth-child(3){
+    color: var(--gray);
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.about .a-button{
+    width: 10rem;
+    height: 2.2rem;
+    margin-top: 1rem;
+}
+
+.about .a-blur{
+    left: 50%;
+}
+
+.about .cards{
+    width: calc(60% - 10px);
+    position: relative;
+    left: 5.1rem; 
+    transform: scale(0.8);
+}
+
+.about .cards>*{
+    position: absolute;
+}
+
+.about .cards .Efficace{
+    top: 12rem;
+    left: 0rem;
+}
+
+.about .cards .Simple{
+    left: 25rem
+}
+
+.about .cards .Rapide{
+    top: 21rem;
+    left: 20rem
+}
+
+.about .a-blur{
+    background: rgb(238 210 255);
+    left: 14rem;
+    top: 8rem
+}
+
+.experience{
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin-bottom: 4rem;
+    position: relative;
+    top: 8rem;
+    transform: scale(0.8);
+}
+
+.experience .achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience .achievement span:nth-of-type(1){
+    color:  var(--gray);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.experience .achievement span:nth-of-type(2){
+    color:  var(--orange);
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.experience .circle{
+    width: 6rem;
+    height: 6rem;
+    background: white;
+    background-image: linear-gradient(45deg,  rgba(205, 198, 186, 0.45),  rgba(205, 198, 186, 0.45));
+    border-radius: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.experience .circle::before{
+    content: "";
+    border-radius: 100%;
+    background-image: linear-gradient(to top, #87e6fb 0%, var(--orange) 100%);
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    position: absolute;
+    z-index:  -1;
+    box-shadow: var(--boxShadow);
+}
+
+
+
+
+@media (min-width: 1400px) {
+    .about{
+        top: -8rem;
+    }
+
+    .about .a-blur{
+        left: 5rem;
+        top: 5rem;
+        filter: blur(75%)
+    } 
+    .about .cards{
+        left: 10rem;
+    }
+
+    .experience{
+        top: -4rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    .about .cards{
+        transform: scale(0.85);
+        left: 2rem;
+    }
+}
+
+@media (max-width: 960px) {
+    .about{
+        top: 10rem;
+    }
+
+    .about .cards{
+        width: calc(65% - 10px);
+        transform: scale(0.65);
+        margin-left: -3rem;
+        padding: 0;
+        left: 3.5rem;
+    }
+
+    .about .awesome{
+        width: calc(32% - 10px);
+    }
+
+    .about .awesome>:nth-child(1){
+        font-size: 1.5rem;
+    }
+
+    .about .awesome>:nth-child(2){
+        font-size: 1.35rem;
+    }
+
+    .about .awesome>:nth-child(3){
+        font-weight: 100;
+    }
+
+    .experience{
+        margin-top: 8rem;
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 724px){
+    .about{
+        top: 6rem;
+        flex-direction: column;
+    }
+    .about .cards{
+        width: 100%;
+        margin-top: 5rem;
+        left: -1rem;
+    }
+
+    .about .awesome{
+        width: 100%;
+    }
+
+    .about .awesome>:nth-child(1),
+    .about .awesome>:nth-child(2){
+        font-size: 1.4rem;
+    }
+    
+    .about .awesome>:nth-child(3){
+        font-size: 1rem;   
+    }
+
+    .experience{
+        top: 13rem;
+        transform: scale(0.65);
+    }
+}
+
+@media (max-width: 420px){
+    .about{
+        top: 10.5rem;
+    }
+    .about .cards{
+        left: 50%;
+        transform: scale(0.6) translate(-93%);
+        gap: 0.2rem;
+    }
+
+    .about .awesome{
+        width: 100%;
+    }
+
+    .experience{
+        top: 20rem;
+        transform: scale(0.6);
+        gap: 0.2rem;
+    }
+
+    .about .cards .Efficace{
+        top: 12rem;
+        left: 0rem;
+    }
+    
+    .about .cards .Simple{
+        left: 2rem
+    }
+    
+    .about .cards .Rapide{
+        top: 21rem;
+        left: 1rem
+    }
+    
+    .about .a-blur{
+        display: none;
+    }
+    
+
+}

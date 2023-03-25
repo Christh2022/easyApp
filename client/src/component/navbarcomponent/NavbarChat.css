@@ -1,0 +1,169 @@
+.navbarComponent a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.9rem;
+    padding: 0 0.3rem;
+}
+
+.navbarComponent li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbarComponent li span{
+    color: #fff;
+}
+
+.navbarComponent li .notification{
+    font-size: 1;
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--orange);
+    display: grid;
+    place-items: center;
+    color: #fff;
+    box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+    cursor: pointer;
+}
+
+
+
+.navbarComponent{
+    height: 100vh;
+    width: 20%;
+    box-sizing: border-box;
+    background: rgba(5, 1, 26, 0.747);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0.3rem;
+    position: fixed;
+    z-index: 999;
+}
+
+.navbarComponent h1{
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+.navbarComponent h1 span{
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+.menu-nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+}
+
+.menu-nav ul{
+    margin-bottom: 3rem;
+    margin-left: -1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+
+.menu-nav li a:hover{
+    color: var(--orange);
+} 
+
+.navbarComponent .logout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbarComponent .l-line{
+    width: 100%;
+    height: 3px;
+    background: var(--gray);
+    margin-bottom: 0.5rem;
+}
+
+.logout{
+    margin-top: -20px;
+}
+.sw-menuNav.showMenu{
+    left: 0%;
+}
+
+.btn-menu-nav{
+    display: none;
+    position: relative;
+    left: -2rem;
+}
+
+
+@media (max-width: 960px) {
+    .navbarComponent{
+        height: 3rem;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        padding: 0;
+        background: rgba(5, 1, 26, 0.747);
+    }
+
+    .sw-menuNav{
+        display: grid;
+        place-items: center;
+        background: #333;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        left: -100%;
+        transition: all 0.3s ease;
+        overflow: hidden;
+    }
+
+    .menu-nav{
+        /*width: 50%;*/
+        display: grid;
+        place-items: center;
+    }
+
+    .btn-menu-nav{
+        display: block;
+        background: transparent;
+        padding: 0.5rem;
+        border: none;
+        z-index: 999;
+        margin-left: -10rem;
+    }
+    
+    .btn-menu-nav.close{
+        transform: rotate(45deg) ;
+    }
+
+    .navbarComponent h1{
+        transform: scale(0.9);
+    }
+
+    .navbarComponent .l-line{
+        display: none;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+
+    .navbarComponent h1{
+        transform: scale(0.7);
+    }
+}

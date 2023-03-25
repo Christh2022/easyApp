@@ -1,0 +1,120 @@
+.connexion{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to top, rgb(9, 9, 182), rgb(11, 196, 228));
+}
+.LoginForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: scale(1);
+}
+  
+.LoginForm .login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+  
+.LoginForm .login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: var(--orange);
+    font-size: 2rem;
+    text-align: center;
+}
+  
+.LoginForm .login-box .user-box {
+    position: relative;
+}
+  
+.LoginForm .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+.LoginForm .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+  
+.LoginForm .login-box .user-box input:focus ~ label,
+.LoginForm .login-box .user-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: var(--orange);
+    font-size: 12px;
+}
+  
+.LoginForm .login-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--black);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border-radius: 0.25rem;
+}
+  
+.LoginForm .login-box button:hover {
+    background: var(--orange);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px var(--orange),
+                0 0 25px var(--orange),
+                0 0 50px var(--orange),
+                0 0 100px var(--orange);
+}
+  
+.LoginForm .login-box form a{
+    color: var(--orange);
+    text-decoration: none;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.LoginForm .login-box form a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .LoginForm{
+        position: absolute;
+        top: 50%;
+        transform: scale(0.8);
+    }
+
+    .LoginForm .login-box .user-box input{
+        border-radius: 0;
+        border: none;
+        border-bottom: 1px solid #fff;
+    }
+}
